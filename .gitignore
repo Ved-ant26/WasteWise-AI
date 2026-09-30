@@ -1,0 +1,38 @@
+# Node
+node_modules/
+
+# Build
+dist/
+build/
+
+# Environment
+.env
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual Environment
+.venv/
+venv/
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
+# VS Code
+.vscode/
+
+# Cursor
+.cursor/
+
+# IDE
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db

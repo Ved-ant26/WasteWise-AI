@@ -1,0 +1,149 @@
+/**
+ * WasteWise-AI design tokens — semantic CSS variables (light / dark).
+ * Consumed by @theme in index.css for Tailwind utilities.
+ */
+
+:root {
+  /* Brand */
+  --ww-primary: #166534;
+  --ww-primary-hover: #15803d;
+  --ww-primary-active: #14532d;
+  --ww-primary-foreground: #ffffff;
+  --ww-primary-muted: #dcfce7;
+  --ww-primary-muted-foreground: #166534;
+
+  --ww-secondary: #0f766e;
+  --ww-secondary-hover: #0d9488;
+  --ww-secondary-active: #115e59;
+  --ww-secondary-foreground: #ffffff;
+  --ww-secondary-muted: #ccfbf1;
+  --ww-secondary-muted-foreground: #115e59;
+
+  --ww-accent: #0369a1;
+  --ww-accent-hover: #0284c7;
+  --ww-accent-foreground: #ffffff;
+  --ww-accent-muted: #e0f2fe;
+  --ww-accent-muted-foreground: #075985;
+
+  /* Surfaces & backgrounds */
+  --ww-background: #f8faf8;
+  --ww-background-subtle: #f1f5f1;
+  --ww-surface: #ffffff;
+  --ww-surface-raised: #ffffff;
+  --ww-surface-muted: #f4f7f4;
+  --ww-surface-overlay: rgb(255 255 255 / 0.95);
+
+  /* Text */
+  --ww-text: #0f172a;
+  --ww-text-secondary: #475569;
+  --ww-text-muted: #64748b;
+  --ww-text-inverse: #f8fafc;
+  --ww-text-on-primary: #ffffff;
+
+  /* Borders */
+  --ww-border: #e2e8e0;
+  --ww-border-strong: #cbd5c9;
+  --ww-border-focus: #16a34a;
+
+  /* Semantic */
+  --ww-success: #15803d;
+  --ww-success-muted: #dcfce7;
+  --ww-success-foreground: #14532d;
+
+  --ww-warning: #b45309;
+  --ww-warning-muted: #fef3c7;
+  --ww-warning-foreground: #92400e;
+
+  --ww-error: #b91c1c;
+  --ww-error-muted: #fee2e2;
+  --ww-error-foreground: #991b1b;
+
+  --ww-info: #0369a1;
+  --ww-info-muted: #e0f2fe;
+  --ww-info-foreground: #075985;
+
+  /* Focus ring */
+  --ww-ring: #22c55e;
+  --ww-ring-offset: #f8faf8;
+
+  /* Radius */
+  --ww-radius-sm: 0.375rem;
+  --ww-radius-md: 0.5rem;
+  --ww-radius-lg: 0.75rem;
+  --ww-radius-xl: 1rem;
+  --ww-radius-full: 9999px;
+
+  /* Shadows */
+  --ww-shadow-sm: 0 1px 2px 0 rgb(15 23 42 / 0.05);
+  --ww-shadow-md: 0 4px 6px -1px rgb(15 23 42 / 0.07), 0 2px 4px -2px rgb(15 23 42 / 0.05);
+  --ww-shadow-lg: 0 10px 15px -3px rgb(15 23 42 / 0.08), 0 4px 6px -4px rgb(15 23 42 / 0.05);
+
+  /* Layout */
+  --ww-container-sm: 640px;
+  --ww-container-md: 768px;
+  --ww-container-lg: 1024px;
+  --ww-container-xl: 1280px;
+  --ww-container-max: 80rem;
+}
+
+.dark {
+  --ww-primary: #4ade80;
+  --ww-primary-hover: #86efac;
+  --ww-primary-active: #22c55e;
+  --ww-primary-foreground: #052e16;
+  --ww-primary-muted: #14532d;
+  --ww-primary-muted-foreground: #bbf7d0;
+
+  --ww-secondary: #2dd4bf;
+  --ww-secondary-hover: #5eead4;
+  --ww-secondary-active: #14b8a6;
+  --ww-secondary-foreground: #042f2e;
+  --ww-secondary-muted: #134e4a;
+  --ww-secondary-muted-foreground: #99f6e4;
+
+  --ww-accent: #38bdf8;
+  --ww-accent-hover: #7dd3fc;
+  --ww-accent-foreground: #082f49;
+  --ww-accent-muted: #0c4a6e;
+  --ww-accent-muted-foreground: #bae6fd;
+
+  --ww-background: #0a0f0a;
+  --ww-background-subtle: #111811;
+  --ww-surface: #121a12;
+  --ww-surface-raised: #1a241a;
+  --ww-surface-muted: #1e291e;
+  --ww-surface-overlay: rgb(10 15 10 / 0.95);
+
+  --ww-text: #f1f5f1;
+  --ww-text-secondary: #cbd5cb;
+  --ww-text-muted: #94a394;
+  --ww-text-inverse: #0f172a;
+  --ww-text-on-primary: #052e16;
+
+  --ww-border: #2a352a;
+  --ww-border-strong: #3d4a3d;
+  --ww-border-focus: #4ade80;
+
+  --ww-success: #4ade80;
+  --ww-success-muted: #14532d;
+  --ww-success-foreground: #bbf7d0;
+
+  --ww-warning: #fbbf24;
+  --ww-warning-muted: #78350f;
+  --ww-warning-foreground: #fde68a;
+
+  --ww-error: #f87171;
+  --ww-error-muted: #7f1d1d;
+  --ww-error-foreground: #fecaca;
+
+  --ww-info: #38bdf8;
+  --ww-info-muted: #0c4a6e;
+  --ww-info-foreground: #bae6fd;
+
+  --ww-ring: #4ade80;
+  --ww-ring-offset: #0a0f0a;
+
+  --ww-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.35);
+  --ww-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --ww-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.45), 0 4px 6px -4px rgb(0 0 0 / 0.35);
+}

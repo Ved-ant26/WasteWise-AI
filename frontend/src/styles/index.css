@@ -1,0 +1,151 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Typography */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --text-display: 2.25rem;
+  --text-display--line-height: 2.5rem;
+  --text-display--font-weight: 700;
+  --text-display--letter-spacing: -0.025em;
+
+  --text-h1: 1.875rem;
+  --text-h1--line-height: 2.25rem;
+  --text-h1--font-weight: 700;
+  --text-h1--letter-spacing: -0.025em;
+
+  --text-h2: 1.5rem;
+  --text-h2--line-height: 2rem;
+  --text-h2--font-weight: 600;
+
+  --text-h3: 1.25rem;
+  --text-h3--line-height: 1.75rem;
+  --text-h3--font-weight: 600;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.5rem;
+
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.25rem;
+
+  --text-label: 0.875rem;
+  --text-label--line-height: 1.25rem;
+  --text-label--font-weight: 500;
+
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1rem;
+
+  /* Spacing scale (extends default) */
+  --spacing-page-y: 3rem;
+  --spacing-section: 2rem;
+  --spacing-stack: 1rem;
+
+  /* Radius */
+  --radius-sm: var(--ww-radius-sm);
+  --radius-md: var(--ww-radius-md);
+  --radius-lg: var(--ww-radius-lg);
+  --radius-xl: var(--ww-radius-xl);
+  --radius-full: var(--ww-radius-full);
+
+  /* Shadows */
+  --shadow-sm: var(--ww-shadow-sm);
+  --shadow-md: var(--ww-shadow-md);
+  --shadow-lg: var(--ww-shadow-lg);
+
+  /* Container */
+  --container-max: var(--ww-container-max);
+
+  /* Semantic colors → Tailwind utilities (bg-primary, text-muted, etc.) */
+  --color-primary: var(--ww-primary);
+  --color-primary-hover: var(--ww-primary-hover);
+  --color-primary-active: var(--ww-primary-active);
+  --color-primary-foreground: var(--ww-primary-foreground);
+  --color-primary-muted: var(--ww-primary-muted);
+  --color-primary-muted-foreground: var(--ww-primary-muted-foreground);
+
+  --color-secondary: var(--ww-secondary);
+  --color-secondary-hover: var(--ww-secondary-hover);
+  --color-secondary-active: var(--ww-secondary-active);
+  --color-secondary-foreground: var(--ww-secondary-foreground);
+  --color-secondary-muted: var(--ww-secondary-muted);
+  --color-secondary-muted-foreground: var(--ww-secondary-muted-foreground);
+
+  --color-accent: var(--ww-accent);
+  --color-accent-hover: var(--ww-accent-hover);
+  --color-accent-foreground: var(--ww-accent-foreground);
+  --color-accent-muted: var(--ww-accent-muted);
+  --color-accent-muted-foreground: var(--ww-accent-muted-foreground);
+
+  --color-background: var(--ww-background);
+  --color-background-subtle: var(--ww-background-subtle);
+  --color-surface: var(--ww-surface);
+  --color-surface-raised: var(--ww-surface-raised);
+  --color-surface-muted: var(--ww-surface-muted);
+  --color-surface-overlay: var(--ww-surface-overlay);
+
+  --color-foreground: var(--ww-text);
+  --color-muted: var(--ww-text-muted);
+  --color-muted-foreground: var(--ww-text-secondary);
+
+  --color-border: var(--ww-border);
+  --color-border-strong: var(--ww-border-strong);
+  --color-border-focus: var(--ww-border-focus);
+
+  --color-success: var(--ww-success);
+  --color-success-muted: var(--ww-success-muted);
+  --color-success-foreground: var(--ww-success-foreground);
+
+  --color-warning: var(--ww-warning);
+  --color-warning-muted: var(--ww-warning-muted);
+  --color-warning-foreground: var(--ww-warning-foreground);
+
+  --color-error: var(--ww-error);
+  --color-error-muted: var(--ww-error-muted);
+  --color-error-foreground: var(--ww-error-foreground);
+
+  --color-info: var(--ww-info);
+  --color-info-muted: var(--ww-info-muted);
+  --color-info-foreground: var(--ww-info-foreground);
+
+  --color-ring: var(--ww-ring);
+  --color-ring-offset: var(--ww-ring-offset);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth font-sans antialiased;
+  }
+
+  body {
+    @apply min-h-screen bg-background text-foreground text-body;
+  }
+
+  h1 {
+    @apply text-h1 text-foreground;
+  }
+
+  h2 {
+    @apply text-h2 text-foreground;
+  }
+
+  h3 {
+    @apply text-h3 text-foreground;
+  }
+}
+
+@layer components {
+  .ww-label {
+    @apply text-label text-muted-foreground;
+  }
+
+  .ww-caption {
+    @apply text-caption text-muted;
+  }
+
+  .ww-container {
+    @apply mx-auto w-full max-w-[var(--ww-container-max)] px-4 sm:px-6 lg:px-8;
+  }
+}
